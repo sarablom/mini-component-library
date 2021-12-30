@@ -46,6 +46,9 @@ const PresentationalBit = styled.div`
   padding: 12px 16px;
   padding-right: 52px;
   border-radius: 8px;
+  /* Adjacent sibling combinator  (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+  
+  There is also the general sibling combinator (~), which works much the same way but doesn't require elements be directly adjacent.*/
   ${NativeSelect}:focus + & {
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
