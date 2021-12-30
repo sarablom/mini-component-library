@@ -29,6 +29,7 @@ const IconInput = ({ label, icon, width = 250, size, placeholder }) => {
   return (
       <SearchBar size={size} style={{ "--width": width + 'px' }}>
         <Icon id={icon} size={styles.size} style={{ position: "absolute", top: styles.top + 'px' }}></Icon>
+        <VisuallyHidden>{placeholder}</VisuallyHidden>
         <InputElement type="text" placeholder={placeholder} style={{ "--fontSize": styles.fontSize + 'px' }} />
       </SearchBar>
   );
